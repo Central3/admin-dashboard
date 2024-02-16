@@ -1,0 +1,44 @@
+/* CSS resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* grid container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+}
+
+/* Header */
+.container__header {
+    background-color: aqua;
+    grid-column: 2/4;
+}
+
+/* Sidebar */
+.container__sidebar {
+    background-color: bisque;
+    grid-row: 1/3;
+}
+
+/* Projects */
+.container__projects {
+    background-color: aquamarine;
+}
+
+/* right sidebar */
+.container__sidebar--right {
+    background-color: blanchedalmond;
+}
